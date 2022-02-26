@@ -1,0 +1,186 @@
+* {
+    font-size: 20px;
+
+}
+
+body{
+    color: #343494;
+    background: #30CFBF;
+}
+
+header{
+    border: 10px outset darkcyan;
+    background: #29B3A5;
+}
+
+header.shadowClass{
+    filter:drop-shadow(16px 16px 10px black)
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    font-size: 120px;
+    background: inherit;
+}
+
+h2{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    background: inherit;
+}
+
+h4{
+    display: flex;
+    justify-content: space-around;
+}
+
+img{
+    background: inherit;
+}
+
+button{
+    color: #343494;
+    background: #30CFBF;
+}
+
+input{
+    color: #343494;
+    background: #30CFBF;
+}
+
+main{
+    margin-left: 20%;
+    margin-right: 20%;
+    font-size: 120px;
+    border: 10px outset darkcyan;
+}
+
+footer{
+    margin-left: 20%;
+    margin-right: 20%;
+    border: 10px outset darkcyan;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+li{
+    display: flex;
+    justify-content: center;
+}
+
+.order{
+    border: 3px solid darkcyan;
+}
+
+main.orders{
+    overflow: scroll;
+    min-height: 100vh;
+    max-height: 100vh;
+}
+
+div.left-box{
+    border: 10px outset darkcyan;
+    position: absolute;
+    left: 8px;
+    width: 18.5%;
+    top:497px;
+    height: 144.5%;
+}
+
+div.left-box-index{
+    height: 124%;
+}
+
+main.table{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+div.cell{
+    display: flex;
+    justify-content: center;
+    border: 3px solid black;
+}
+
+div.header{
+    background: #37F0DD;
+}
+
+div.even{
+    background: #34E0CF;
+}
+
+div.odd{
+    background: #2DC2B3;
+}
+
+nav.left-box{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-content: center;
+}
+
+a.curr{
+    color: blue;
+}
+
+a.left-box.curr{
+    border-left: 3px solid darkcyan;
+    border-right: 3px solid darkcyan;
+}
+
+a.orders.curr{
+    border-bottom: 3px solid darkcyan;
+}
+
+a:hover{
+    background: #29B3A5;
+    font-size: 25px;
+    border: 4px outset darkcyan;
+    color: #343494;
+}
+
+body.waitPointer{
+    cursor: wait;
+}
+
+body.normalPointer{
+    cursor: default;
+}
+
+
+@media screen and (max-width: 800px) {
+    li{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
+
+
+@media screen and (min-width: 900px) {
+    img.footer-img {
+        width: 100%;
+        height: 100%;
+    }
+    li{
+        margin-left: 30%;
+        margin-right: 30%;
+        margin-bottom: 5%;
+        display: flex;
+        justify-content: center;
+    }
+}

@@ -1,26 +1,36 @@
 <!DOCTYPE html>
-<html lang="ru">
 <head>
 
     <meta charset="UTF-8">
     <meta name="keywords" content="заказы, игры, предметы">
+    <link href="css/style.css" rel="stylesheet">
     <title>FItem</title>
 </head>
-<body>
-    <header>
-        <h1>
-            FItem
-        </h1>
-        <h2>
-            Найдем предметы за вас!
-        </h2>
-        <nav>
-            <h3><a href="index.html">О Нас</a>,<a href="allOrders.html">Все заказы</a>, <a href="InProcessOrders.html"> Заказы на исполнении </a>, <a href="FinishedOrders.html"> Завершенные заказы</a></h3>
-        </nav>
-    </header>
+<body id="body">
+<header class="shadowClass">
+    <h1>
+        FItem
+        <img src="img/logo.png" alt="Лого" width=200 height=200>
+    </h1>
+    <h2>
+        Найдем предметы за вас!
+    </h2>
+    <h2>
+        <script src="scripts/dataScript.js"></script>
+        <script src="scripts/currentButtons.js"></script>
+    </h2>
+</header>
 
-    <main>
+<div class="left-box left-box-index">
+    <nav class="left-box">
+        <h4><a id="aboutUs" href="index.html">О нас</a></h4>
+        <h4><a id="allOrders" href="allOrders.html">Заказы</a></h4>
+        <h4><a id="contacts" href="contacts.html">Контакты</a></h4>
+        <h4><a id="reviewss" href="reviews.html">Отзывы</a></h4>
+    </nav>
+</div>
 
+    <main class="orders">
         <h4> Почему мы?</h4>
         <ul>
             <li>
@@ -32,44 +42,51 @@
             </li>
 
             <li>
+
                 <h5>У нас есть котик</h5>
+            </li>
+            <li>
                 <pre>
-                    ⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄
-                    ⠄⠄⠄⠄⠄⠄⢰⣷⡄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄
-                    ⠄⠄⠄⠄⣠⣾⣿⣿⣷⣦⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄
-                    ⠄⠄⠄⣠⣿⣿⣿⣿⣿⣿⣇⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄
-                    ⠄⠄⠄⠄⠛⠿⣿⣿⣿⣿⣿⣆⠄⠄⠄⠄⠄⣴⣿⣿⣆⠄⠄⠄
-                    ⠄⠄⠄⠄⠄⣰⣿⣿⣿⣿⣿⣿⣷⣄⠄⠄⠄⣿⣿⠛⠉⠄⠄⠄
-                    ⠄⠄⠄⠄⠄⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣄⠄⠘⣿⡆⠄⠄⠄⠄
-                    ⠄⠄⠄⠄⠄⢹⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⡄⠸⣿⡀⠄⠄⠄
-                    ⠄⠄⠄⠄⠄⠄⢻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⠄⣿⡇⠄⠄⠄
-                    ⠄⠄⠄⠄⠄⠄⢸⣿⡟⣿⣿⣿⣿⣿⣿⣿⣿⡇⢀⣿⠇⠄⠄⠄
-                    ⠄⠄⠄⠄⠄⢀⣸⡿⢁⣘⣿⣿⣿⣿⣿⣿⣿⣇⣼⠋⠄⠄⠄⠄
-                    ⠄⠄⠄⠄⠄⠻⠿⠓⠿⠿⠿⠿⠿⠿⠿⠿⠿⠛⠁⠄⠄⠄⠄⠄
-                    ⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄
+⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄
+⠄⠄⠄⠄⠄⠄⢰⣷⡄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄
+⠄⠄⠄⠄⣠⣾⣿⣿⣷⣦⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄
+⠄⠄⠄⣠⣿⣿⣿⣿⣿⣿⣇⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄
+⠄⠄⠄⠄⠛⠿⣿⣿⣿⣿⣿⣆⠄⠄⠄⠄⠄⣴⣿⣿⣆⠄⠄⠄
+⠄⠄⠄⠄⠄⣰⣿⣿⣿⣿⣿⣿⣷⣄⠄⠄⠄⣿⣿⠛⠉⠄⠄⠄
+⠄⠄⠄⠄⠄⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣄⠄⠘⣿⡆⠄⠄⠄⠄
+⠄⠄⠄⠄⠄⢹⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⡄⠸⣿⡀⠄⠄⠄
+⠄⠄⠄⠄⠄⠄⢻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⠄⣿⡇⠄⠄⠄
+⠄⠄⠄⠄⠄⠄⢸⣿⡟⣿⣿⣿⣿⣿⣿⣿⣿⡇⢀⣿⠇⠄⠄⠄
+⠄⠄⠄⠄⠄⢀⣸⡿⢁⣘⣿⣿⣿⣿⣿⣿⣿⣇⣼⠋⠄⠄⠄⠄
+⠄⠄⠄⠄⠄⠻⠿⠓⠿⠿⠿⠿⠿⠿⠿⠿⠿⠛⠁⠄⠄⠄⠄⠄
+⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄
                 </pre>
             </li>
 
             <li>
-                <h5>У нас есть сниппеты</h5>
-                <pre><code>
-                    {
-                    "standartIncludes": {
-                    "prefix": "Incl",
-                    "body": [
-                    "#include &lt iostream &gt",
-                        "#include $lt vector $gt",
-                            "",
-                            "using namespace std;"
-                            ],
-                            "description": "All standart includes and namespace std"
-                            }
-                    }
+            <h5>У нас есть сниппеты</h5>
+            </li>
+            <li>
+<pre><code>
+{
+"standartIncludes": {
+"prefix": "Incl",
+"body": [
+"#include &lt;string>",
+"#include &lt;vector>",
+"",
+"using namespace std;"
+],
+"description": "All standart includes and namespace std"
+}
+}
                 </code></pre>
             </li>
 
             <li>
-                Мы прекрасно знаем, что
+                <h5>Мы прекрасно знаем, что</h5>
+            </li>
+            <li>
                 <article><blockquote>
                     <pre>
 <b>Падение</b>- это не <i>провал</i>.
@@ -83,10 +100,9 @@
 
 
     </main>
-    <footer>
-        контактная информация:
-        <p>ул. Пушкина, д. Колотушкина</p>
-        <p>тел: +71234567890</p>
-    </footer>
+
+<footer>
+    <img class="footer-img" src="img/leon.png" width="10" height="10">
+    <h4><script src="scripts/pageLoadTime.js"></script></h4>
+</footer>
 </body>
-</html>

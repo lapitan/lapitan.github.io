@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="keywords" content="заказы, игры, предметы">
     <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/css/iziToast.min.css" integrity="sha512-O03ntXoVqaGUTAeAmvQ2YSzkCvclZEcPQu1eqloPaHfJ5RuNGiS4l+3duaidD801P50J28EHyonCV06CUlTSag==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/js/iziToast.min.js" integrity="sha512-Zq9o+E00xhhR/7vJ49mxFNJ0KQw1E1TMWkPTxrWcnpfEFDEXgUiwJHIKit93EW/XxE31HSI5GEOW06G6BF1AtA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><link rel="stylesheet" href="iziToast.min.css">
     <title>FItem</title>
 </head>
 <body id="body">
@@ -26,7 +28,7 @@
         <h4><a id="aboutUs" href="index.html">О нас</a></h4>
         <h4><a id="allOrders" href="allOrders.html">Заказы</a></h4>
         <h4><a id="contacts" href="contacts.html">Контакты</a></h4>
-        <h4><a id="reviews" href="reviews.html">Отзывы</a></h4>
+        <h4><a id="reviewss" href="reviews.html">Отзывы</a></h4>
     </nav>
 </div>
 
@@ -37,30 +39,30 @@
         <h4><a id="mainOrders" href="allOrders.html">Все заказы</a><a id="pendingOrders" href="pendingOrders.html">Заказы на ожидании</a><a id="inProcessOrders" href="InProcessOrders.html"> Заказы на исполнении </a><a id="finishedOrders" href="FinishedOrders.html"> Завершенные заказы</a></h4>
     </nav>
 </main>
+    <div id="comments">
+
+    </div>
+<main>
+    <form>
+        <input id="inputText" type="text" placeholder="Введите Название и стоимость">
+        <button id="confirmButton">Отправить</button>
+    </form>
+</main>
+
 
 <main class="orders">
     <h4>
-        Все заказы
+        Заказы на ожидании
     </h4>
-    <ul>
-    <li class="order"><section>
-        <h5> Заказ на исполнении 1</h5>
-        <h6> Информация о заказе</h6>
-    </section></li>
-    <li class="order"><section>
-        <h5> Заказ на исполнении 2</h5>
-        <h6> Информация о заказе</h6>
-    </section></li>
-    <li class="order"><section>
-        <h5>Завершенный заказ 1</h5>
-        <h6> Информация о заказе</h6>
-    </section></li>
-    </ul>
+    <ul id="pending">
 
+    </ul>
 </main>
+
 <footer>
     <img class="footer-img" src="img/leon.png" width="10" height="10">
     <h4><script src="scripts/pageLoadTime.js"></script></h4>
+    <script src="scripts/form.js"></script>
 </footer>
 </body>
 </html>
